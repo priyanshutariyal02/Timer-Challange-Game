@@ -68,6 +68,7 @@ header p {
   border-bottom-right-radius: 0;
   padding: 0.25rem;
   color: #d1f0ec;
+  outline: none;
 }
 
 #player button {

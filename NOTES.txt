@@ -1,6 +1,29 @@
 ********* Working with Refs & Portals *********
 
-    
+Refs: 
+    -it is like a useState only.
+    -it preserve the value.
+    -no rerender.
+    -whenever the ref changes, the components function does't re-execute.
+
+
+**useState VS useRef:
+
+*For useState:
+
+-Allows functional components to have their own state.
+-Allows us to update the state inside components.
+-It causes components to re-render after state updates.
+-Returns the current state.
+-Has an updater function that updates the state.
+
+
+*For useRef:
+
+-Returns an object with a property containing the initial value.
+-Doesn't cause a component to re-render when the value or state changes.
+-Data is persisted between renders.
+-Allows referencing DOM elements.
 
 
 

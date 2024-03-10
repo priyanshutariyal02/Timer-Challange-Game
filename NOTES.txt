@@ -26,4 +26,7 @@ Refs:
 -Allows referencing DOM elements.
 
 
+setTimeout();
+    that's build in js not react specific.
+    (targetTime * 1000): to get timer on mili-seconds.
 

@@ -30,3 +30,4 @@ setTimeout();
     that's build in js not react specific.
     (targetTime * 1000): to get timer on mili-seconds.
 
+**ref doesn't lost the value if the components function is re-executes.

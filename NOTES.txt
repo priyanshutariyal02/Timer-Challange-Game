@@ -5,6 +5,8 @@ Refs:
     -it preserve the value.
     -no rerender.
     -whenever the ref changes, the components function does't re-execute.
+    -we can't forward ref to other component.(except 'forwardRef' in react )
+    -forwardRef is used to forward refs from one component to another.
 
 
 **useState VS useRef:
@@ -31,3 +33,12 @@ setTimeout();
     (targetTime * 1000): to get timer on mili-seconds.
 
 **ref doesn't lost the value if the components function is re-executes.
+
+
+<dialog> : HTML element represents a dialog box or other interactive components, such as dismissible alert or subwindow.
+
+        Attributes: open
+        methods to render dialog: .show(), .showModal()
+
+**useImperativeHandle:
+    It is a React Hook that lets you customize the handle exposed as a ref.

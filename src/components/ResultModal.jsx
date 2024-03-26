@@ -1,20 +1,23 @@
-import React, { forwardRef, useRef, useImperativeHandle } from 'react';
+import React, { forwardRef, useImperativeHandle, useRef } from 'react';
 
-const ResultModal = forwardRef(function ResultModal({ result, targetTime }, ref) {
+const ResultModal = forwardRef(function ResultModal({ targetTime, remainingTime, onReset }, ref) {
+
     const dialog = useRef();
+    const userLost = remainingTime <= 0;
+    const formattedRemainingTime = (remainingTime / 1000).toFixed(2); // toFixed() : js method to format the number to a fixed number of decimal places.
     useImperativeHandle(ref, () => {
         return {
-            open() {
+            open: () => {
                 dialog.current.showModal();
-            },
+            }
         }
     });
     return (
         <dialog ref={dialog} className="result-modal">
-            <h2>Your {result}</h2>
-            <p>The target time was <strong>{targetTime}</strong> seconds.</p>
-            <p>You stopped the timer with <strong>seconds left.</strong></p>
-            <form method="dialog">
+            {userLost && <h2>Your Lost</h2>}
+            <p>The target time was <strong>{targetTime} seconds.</strong></p>
+            <p>You stopped the timer with <strong>{formattedRemainingTime} seconds left.</strong></p>
+            <form method="dialog" onSubmit={onReset}>
                 <button>Close</button>
             </form>
         </dialog>

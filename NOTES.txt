@@ -42,3 +42,5 @@ setTimeout();
 
 **useImperativeHandle:
     It is a React Hook that lets you customize the handle exposed as a ref.
+
+**toFixed() : js method to format the number to a fixed number of decimal places.

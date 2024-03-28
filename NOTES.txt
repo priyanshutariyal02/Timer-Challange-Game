@@ -44,3 +44,16 @@ setTimeout();
     It is a React Hook that lets you customize the handle exposed as a ref.
 
 **toFixed() : js method to format the number to a fixed number of decimal places.
+
+**createPortal:
+    -It lets you render some children into a different part of the DOM.
+
+    -This is used to create such a portal and the idea behind a portal is really just to kind of teleport HTML code that will be rendered by component into a different place in the DOM.
+
+    -ex: const example = () =>{
+            return createPortal(<dialog>
+        
+            </dialog>, 
+            document.getElementById('_ID');
+            )
+        }

@@ -2,4 +2,5 @@
 
 In this game, the user will see four challenges: easy, medium, hard, and pro. 
 If the user clicks the start challenge button, the challenge will begin, and it must be stopped before the time runs out or the user will lose.
+<br>
 Game link: https://timer-challenge-game-by-priyanshu.netlify.app/
